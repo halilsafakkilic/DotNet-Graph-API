@@ -8,7 +8,7 @@ I tried the subscriptions capabilities on WebSocket, but I did not send it to th
 ### Some Information
 GraphQL runs under `/api/v1`. If you open with **[GET]**, you can view the scheme produced by *SchemaPrinter *. You can start tampering by sending GraphQL queries with the **[POST]** method...
 
-Includes GraphiQL ❤️. GraphiQL will open automatically when run with VSCode. If you start it manually, you can access it via `/graphiql`.
+Includes GraphiQL ❤, you can access it via `/ui/graphiql`.
 
 ### Definations
 Default Size Limit: 10
@@ -26,7 +26,7 @@ Subscriptions (abonelik) yeteneklerini WebSocket üzerinden denedim fakat başla
 ### Bazı Bilgiler
 GraphQL `/api/v1` altında çalışmaktadır. **[GET]** ile açmanız halinde *SchemaPrinter* tarafından üretilen şemayı görüntüleyebilirsiniz. **[POST]** metodu ile GraphQL sorguları göndererek kurcalamaya başlayabilirsiniz...
 
-GraphiQL ❤️ içerir. VSCode ile çalıştırdığınızda GraphiQL otomatik olarak açılacaktır. Eğer elle başlatırsanız `/graphiql` yolundan erişebilirsiniz.
+GraphiQL ❤️ içerir, `/ui/graphiql` yolundan erişebilirsiniz.
 
 ### Tanımlar
 Varsayılan Limit: 10

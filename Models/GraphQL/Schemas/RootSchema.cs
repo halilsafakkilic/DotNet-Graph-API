@@ -1,16 +1,16 @@
-using GraphQL;
+using System;
 using GraphQL.Types;
+using Microsoft.Extensions.DependencyInjection;
 using netCoreGraphQL.Models.GraphQL.Mutations;
 using netCoreGraphQL.Models.GraphQL.Queries;
 
-namespace netCoreGraphQL.Models.GraphQL.Schemas
+namespace netCoreGraphQL.Models.GraphQL.Schemas;
+
+public class RootSchema : Schema
 {
-    public class RootSchema : Schema
+    public RootSchema(IServiceProvider resolver) : base(resolver)
     {
-        public RootSchema(IDependencyResolver resolver) : base(resolver)
-        {
-            Query = resolver.Resolve<RootQuery>();
-            Mutation = resolver.Resolve<RootMutation>();
-        }
+        Query = resolver.GetRequiredService<RootQuery>();
+        Mutation = resolver.GetRequiredService<RootMutation>();
     }
 }

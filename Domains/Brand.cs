@@ -1,17 +1,16 @@
 using System;
 
-namespace netCoreGraphQL.Domains
+namespace netCoreGraphQL.Domains;
+
+public class Brand
 {
-    public class Brand
+    public Brand(Guid id, string name)
     {
-        public Brand(Guid id, string name)
-        {
-            this.Id = id;
-            this.Name = name;
-        }
-
-        public Guid Id { get; private set; }
-
-        public string Name { get; private set; }
+        Id = id;
+        Name = name;
     }
+
+    public Guid Id { get; }
+
+    public string Name { get; }
 }
